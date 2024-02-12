@@ -1,0 +1,20 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+domains:
+- domain: cartwheelranch.farm
+  type: PRIMARY
+  zone: cartwheelranch.farm
+name: cartwheelranch-farm
+region: nyc
+static_sites:
+- build_command: npm run build
+  catchall_document: index.html
+  environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: dsv101/cartwheelranch-preact
+  name: cartwheelranch-preact
+  routes:
+  - path: /
