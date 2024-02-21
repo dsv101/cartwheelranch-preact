@@ -1,8 +1,10 @@
 import { render } from 'preact';
 import { LocationProvider, Router, Route } from 'preact-iso';
 
-import { Home } from './pages/Home';
-import { NotFound } from './pages/_404.jsx';
+import { Home } from '@pages/Home';
+import { About } from '@pages/About';
+import { NotFound } from '@pages/_404.jsx';
+import './reset.css';
 import './style.css';
 
 export function App() {
@@ -11,6 +13,7 @@ export function App() {
 			<main>
 				<Router>
 					<Route path="/" component={Home} />
+					<Route path="/about" component={About} />
 					<Route default component={NotFound} />
 				</Router>
 			</main>

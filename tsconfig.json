@@ -15,9 +15,9 @@
 			"react": ["./node_modules/preact/compat/"],
 			"react-dom": ["./node_modules/preact/compat/"],
 			"src/*": ["./src/*"],
-			"@assets": ["./src/assets"],
-			"@components": ["./src/components"],
-			"@pages": ["./src/pages"]
+			"@assets/*": ["./src/assets/*"],
+			"@components/*": ["./src/components/*"],
+			"@pages/*": ["./src/pages/*"]
 		}
 	},
 	"include": ["node_modules/vite/client.d.ts", "**/*"]

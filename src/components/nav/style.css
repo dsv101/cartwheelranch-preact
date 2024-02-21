@@ -1,0 +1,15 @@
+.main-nav ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-nav ol li {
+  display: inline-block;
+}
+
+.main-nav ol li a {
+  text-decoration: none;
+}
