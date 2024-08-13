@@ -4,6 +4,10 @@ import { LocationProvider, Router, Route } from 'preact-iso';
 import { Home } from '@pages/Home';
 import { About } from '@pages/About';
 import { NotFound } from '@pages/_404.jsx';
+
+import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
+import '@shoelace-style/shoelace/dist/themes/light.css';
+
 import './reset.css';
 import './style.css';
 
@@ -21,4 +25,5 @@ export function App() {
 	);
 }
 
+setBasePath('/shoelace');
 render(<App />, document.getElementById('app'));
