@@ -7,6 +7,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@shoelace-style/shoelace": "^2.16.0",
 		"firebase": "^10.12.5",
 		"preact": "^10.13.1",
 		"preact-iso": "^2.3.2",
