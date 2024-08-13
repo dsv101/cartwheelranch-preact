@@ -75,6 +75,19 @@ main {
 	gap: 24px;
 }
 
+@media (max-width: 800px) {
+  .flex-columns-when-small {
+    flex-direction: column;
+		gap: 6px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hidden-when-small {
+    display: none;
+  }
+}
+
 .polaroid {
 	padding: 1vw 1vw 3vw 1vw;
 	background: white;

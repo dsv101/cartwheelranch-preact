@@ -19,8 +19,8 @@ const Card: FunctionalComponent<{
     source,
 }) => {
     return (
-        <div style={`display: flex; flex-direction: ${dir === 'ltr' ? 'row' : 'row-reverse'}; gap: 48px;`}>
-            <img src={imgSrc} class='polaroid pic' style="width: 33vh; height: 33vh; max-width: 250px; max-height: 250px;" />
+        <div class="flex-rows flex-columns-when-small">
+            <img src={imgSrc} class='polaroid pic' style="width: 33vh; height: 33vh; max-width: 250px; max-height: 250px; align-self: center;" />
             <div class="flex-columns">
                 <h2>{headingText}</h2>
                 {paragraphs.map((text) => (<p>{text}</p>))}
@@ -37,13 +37,13 @@ export const About: FunctionalComponent<{}> = () => {
             <div style="text-align: center">
                 <h1>About Cartwheel Ranch</h1>
             </div>
-            <div class="flex-rows" style="justify-content: center;">
+            <div class="flex-rows flex-columns-when-small" style="justify-content: center; align-items: center">
                 <span>Better than organic</span>
-                <span>|</span>
+                <span class="hidden-when-small">|</span>
                 <span>Pasture raised</span>
-                <span>|</span>
+                <span class="hidden-when-small">|</span>
                 <span>No hormones</span>
-                <span>|</span>
+                <span class="hidden-when-small">|</span>
                 <span>No vaccines</span>
             </div>
             <Card
